@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu Nacional</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: nome;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 9px;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+    font-size: 18px;
+    padding: 5px 5px;
+    transition: color 0.3s;
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid #676161;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h2 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.video, .mapa {
+    flex: 1;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.exposicoes ul {
+    list-style-type: none;
+}
+
+.exposicoes ul li a {
+    text-decoration: none;
+    color: #0066cc;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.exposicoes ul li a:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.galeria {
+    margin-bottom: 2rem;
+}
+
+.galeria .fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.galeria .fotos img {
+    width: 100%;
+    height: auto;
+}
+
+.visita form {
+    display: flex;
+    flex-direction: column;
+}
+
+.visita label {
+    margin: 0.5rem 0 0.25rem;
+}
+
+.visita input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.visita button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <h1><strong>COLISEU</strong></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#visita">Visita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <img src="coliseu em roma na italia.jpg" alt="Coliseu - Entrada principal">
+            <h2>Coliseu - Roma</h2>
+        </section>
+
+        <section class="info">
+            <div class="video">
+                <h2>Vídeo que conta sobre a história do Coliseu:</h2>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/L76k7-W06mg?si=vrEqYXBr3qHFKey6" title="YouTube video player" frameborder="0" ></iframe>
+            </div>
+            
+            <div class="mapa">
+                <h2>Localização do Coliseu:</h2>
+                <iframe width="300" height="200" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.1228885023625!2d12.489655976584967!3d41.89021416465473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColiseu!5e0!3m2!1spt-BR!2sbr!4v1728581309863!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+        </section>
+
+        <section class="content">
+
+            <div class="historia">
+                <h2>Um pouco sobre o Coliseu:</h2>
+                <p><strong>História</strong>
+                    Construído entre 70 e 80 d.C., o Coliseu foi encomendado pelos imperadores Vespasiano e Tito, da dinastia Flaviana. Sua finalidade principal era proporcionar entretenimento público, como lutas de gladiadores, execuções e simulações de batalhas navais. Com capacidade para até 80.000 espectadores, o Coliseu era um símbolo do poder de Roma.
+                    <br>
+                    <strong>Arquitetura</strong>
+                    O Coliseu é uma estrutura elíptica de 189 metros de comprimento, 156 metros de largura e 48 metros de altura, construída com travertino, tufa e concreto. Ele tem quatro andares e diferentes seções para acomodar as várias classes sociais romanas. O design permitia uma entrada e saída rápida dos espectadores, um avanço para a época.
+                    <br>
+                    <strong>Funções e Espetáculos</strong>
+                    Os espetáculos incluíam lutas de gladiadores que eram competições mortais entre gladiadores, que eram principalmente escravos ou prisioneiros de guerra,
+                    caça de animais onde tinham exibições em que animais exóticos, como leões e elefantes, eram caçados,
+                    execuções públicas onde prisioneiros e condenados à morte eram executados em público,
+                    naumaquias que eram batalhas navais simuladas em que o Coliseu era inundado.
+                    <br>
+                    <strong>Declínio:</strong>
+                    Com o declínio do Império Romano, o Coliseu foi abandonado e usado como fonte de material de construção. Diversos terremotos e saques também danificaram a estrutura. No entanto, o Coliseu foi parcialmente preservado, e em 1749, foi consagrado como um local cristão.
+                    <br>
+                    <strong>O Coliseu Hoje:</strong>
+                    Atualmente, o Coliseu é um dos monumentos mais visitados do mundo, fazendo parte do Patrimônio Mundial da UNESCO. Ele passou por várias fases de restauração para preservar sua estrutura, e é um símbolo duradouro da Roma Antiga.
+                    <br>
+                    <strong>Curiosidades:</strong>
+                    O nome "Coliseu" vem de uma estátua colossal de Nero que ficava próxima ao anfiteatro. Hoje, o local é usado para eventos religiosos, como a Via Crucis da Sexta-Feira Santa liderada pelo Papa.</p>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="galeria">
+                <h2>Fotos do Coliseu</h2>
+                <div class="fotos">
+                    <img src="coliseu 1.webp" alt="Foto do Museu 1">
+                    <img src="coliseu 2.jpg" alt="Foto do Museu 2">
+                    <img src="coliseu 3.avif" alt="Foto do Museu 3">
+                    <img src="coliseu 4.avif" alt="Foto do Museu 4">
+                </div>
+            </div>
+            
+            <div class="visita">
+                <h2>Faça uma Visita</h2>
+                <form action="#">
+                    <label for="data"><strong>Marcar Data</strong></label>
+                    <input type="date" id="data" name="data">
+                    <label for="pessoas"><strong>Quantidade pessoas</strong></label>
+                    <input type="number" id="pessoas" name="pessoas" value="1" min="1">
+                    <label for="qtd da passagem"><strong>Preço da passagem com decsonto</strong></label>
+                    <p>De: <s>R$ 35.040,70</s></p>
+                    <p>Por apenas: <strong>R$26.520,30</strong></p>
+                </form>
+            </div>
+        </aside>
+    </main>
+    <br><br>
+
+    <footer>
+        <p>&copy; 2019 Coliseu-Roma  -  Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
